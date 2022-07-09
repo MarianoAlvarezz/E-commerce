@@ -1,0 +1,50 @@
+/*--------------------------------------------- Imports ------------------------------------------------- */
+@import "footer";
+@import "header";
+@import "main";
+
+/*--------------------------------------------- Normalize ------------------------------------------------- */
+
+*{
+    box-sizing: border-box ; 
+    padding: 0 ;
+    margin: 0 ;  
+}
+
+/*--------------------------------------------- Body ------------------------------------------------- */
+
+body{
+    background-color: black;
+    color: white;
+}
+
+/*----------------------------------- Estilos textos y titulos --------------------------------------- */
+
+        .texto{
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            padding: 50px;
+        }
+
+        .titulo{
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            padding: 25px;
+        }
+
+
+/*--------------------------------------------- Fondo ------------------------------------------------- */
+
+.fondo{
+    background-image: url(../Imagenes/Imagen\ de\ Fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.colorFondo{
+    background: rgb(70,70,70);
+    background: linear-gradient(90deg, rgba(70,70,70,1) 0%, rgba(56,56,56,1) 0%, rgba(0,0,0,1) 100%);
+    opacity: 0.8;
+}
