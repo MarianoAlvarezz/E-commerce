@@ -1,6 +1,58 @@
 /*--------------------------------------------- Imports ------------------------------------------------- */
 footer {
-  padding: 2em;
+  padding: 1em;
+  background-image: linear-gradient(to right, #a31515, #861016, #690c15, #4d0a11, #320808);
+  opacity: 0.8;
+}
+
+header {
+  width: 100%;
+}
+header .container {
+  background-image: linear-gradient(to right, #3c0202, #310705, #270907, #1c0909, #0c0909);
+  border-radius: 10%;
+  opacity: 0.9;
+  z-index: 100;
+  align-items: center;
+}
+header .navbar-brand {
+  color: white !important;
+}
+header .nav-link {
+  color: white !important;
+}
+header li a:hover {
+  color: red;
+  transition: 1s;
+}
+header .nav-link {
+  --clippy: polygon(0 2%, 0 1%, 0 100%, 0% 100%);
+}
+header .nav-link:hover {
+  --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+header .nav-link:after {
+  content: "";
+  display: block;
+  background: white;
+  height: 3px;
+  -webkit-clip-path: var(--clippy);
+          clip-path: var(--clippy);
+  transition: -webkit-clip-path 0.5s;
+  transition: clip-path 0.5s;
+  transition: clip-path 0.5s, -webkit-clip-path 0.5s;
+  width: 50px;
+}
+header .navbar-toggler {
+  background-image: url(../Imagenes/Imagen\ de\ Fondo.jpg);
+}
+
+.menu .row {
+  padding: 20px;
+  margin: 10px;
+}
+.menu .card-text {
+  color: black;
 }
 
 /*--------------------------------------------- Normalize ------------------------------------------------- */
@@ -12,8 +64,8 @@ footer {
 
 /*--------------------------------------------- Body ------------------------------------------------- */
 body {
-  background-color: black;
-  color: white;
+  color: white !important;
+  font-family: "Oswald", sans-serif;
 }
 
 /*----------------------------------- Estilos textos y titulos --------------------------------------- */
@@ -22,6 +74,14 @@ body {
   text-align: center;
   margin: auto;
   padding: 50px;
+  font-family: "Oswald", sans-serif;
+}
+
+.texto1 {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  font-family: "Oswald", sans-serif;
 }
 
 .titulo {
@@ -29,6 +89,7 @@ body {
   text-align: center;
   margin: auto;
   padding: 25px;
+  font-family: "Oswald", sans-serif;
 }
 
 /*--------------------------------------------- Fondo ------------------------------------------------- */
@@ -36,10 +97,22 @@ body {
   background-image: url(../Imagenes/Imagen\ de\ Fondo.jpg);
   background-size: cover;
   background-attachment: fixed;
+  z-index: -1;
 }
 
 .colorFondo {
-  background: rgb(70, 70, 70);
-  background: linear-gradient(90deg, rgb(70, 70, 70) 0%, rgb(56, 56, 56) 0%, rgb(0, 0, 0) 100%);
-  opacity: 0.8;
+  background: rgba(55, 54, 54, 0.8);
+  z-index: 10;
+}
+
+.fondo2 {
+  background-image: url(../Imagenes/imagenFondo2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.colorFondo2 {
+  background: rgba(55, 54, 54, 0.8);
+  z-index: 10;
 }/*# sourceMappingURL=estilos.css.map */

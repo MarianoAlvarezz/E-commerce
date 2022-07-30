@@ -14,8 +14,8 @@
 /*--------------------------------------------- Body ------------------------------------------------- */
 
 body{
-    background-color: black;
-    color: white;
+    color: white!important;
+    font-family: 'Oswald', sans-serif;
 }
 
 /*----------------------------------- Estilos textos y titulos --------------------------------------- */
@@ -25,6 +25,14 @@ body{
             text-align: center;
             margin: auto;
             padding: 50px;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .texto1{
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            font-family: 'Oswald', sans-serif;
         }
 
         .titulo{
@@ -32,6 +40,7 @@ body{
             text-align: center;
             margin: auto;
             padding: 25px;
+            font-family: 'Oswald', sans-serif;
         }
 
 
@@ -41,10 +50,22 @@ body{
     background-image: url(../Imagenes/Imagen\ de\ Fondo.jpg);
     background-size: cover;
     background-attachment: fixed;
+    z-index: -1;
 }
 
 .colorFondo{
-    background: rgb(70,70,70);
-    background: linear-gradient(90deg, rgba(70,70,70,1) 0%, rgba(56,56,56,1) 0%, rgba(0,0,0,1) 100%);
-    opacity: 0.8;
+    background: rgba(55, 54, 54, 0.8); 
+    z-index: 10;
+}
+
+.fondo2{
+    background-image: url(../Imagenes/imagenFondo2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.colorFondo2{
+    background: rgba(55, 54, 54, 0.8); 
+    z-index: 10;
 }
