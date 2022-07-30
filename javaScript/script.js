@@ -100,7 +100,7 @@ if(Cuotas == veinticuatroCuotas){
 
         /* ------------ Sacar comentario para activar el script ------------------ */
 
-/* class Guitarra {
+class Guitarra {
     constructor (marca, precio, adicionales, cuotas){
         this.marca;
         this.precio;
@@ -115,7 +115,7 @@ if(Cuotas == veinticuatroCuotas){
 
 
         
-    } */
+    }
 
 
     /**
