@@ -195,8 +195,8 @@ let respuesta = prompt (mensaje);
 
         while (check){
             let msj = "";
-            let marca = prompt ("Ingrese la marca que desea comprar");
-            let precio = prompt (("Ingrese el monto que quiera pagar"));
+            let marca = prompt ("Ingrese la marca que desea comprar" + "\n 1) Guitarra Fender" + "\n 2) Guitarra Yamaha" + "\n 3) Guitarra Jackson" + "\n 4) Guitarra Gibson");
+            let precio = prompt (("Ingrese el monto que quiera pagar o si desea pagarlo en cuotas"));
 
             if (!marca){
                 msj+= ("\n Debe ingresar un valor valido");
@@ -233,6 +233,19 @@ let respuesta = prompt (mensaje);
 
             guitarrasStock.push(guitarra);
             alert ("Guitarra agregada con exito")
+        }
+    } 
+
+    function elegir_adicional(){
+        
+        let guitarra = ingresar_datos();
+
+        if (adicional){
+            adicional.set_id(gen_id);
+            gen_id++
+
+            guitarrasStock.push(guitarra);
+            alert ("Adicional agregada con exito")
         }
     } 
 
