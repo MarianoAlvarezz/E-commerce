@@ -140,10 +140,10 @@ class Guitarra {
 /* Creo el array */
 
 let guitarrasStock = [];
-guitarrasStock.push(new Guitarra ("Fender ", " cuerdas -", 120000));
-guitarrasStock.push(new Guitarra ("Gibson ", " soporte -", 150000));
-guitarrasStock.push(new Guitarra ("Jackson ", " afinador -", 110000));
-guitarrasStock.push(new Guitarra ("Yamaha ", " puas -", 100000));
+guitarrasStock.push(new Guitarra ("Fender", " cuerdas -", 120000));
+guitarrasStock.push(new Guitarra ("Gibson", " soporte -", 150000));
+guitarrasStock.push(new Guitarra ("Jackson", " afinador -", 110000));
+guitarrasStock.push(new Guitarra ("Yamaha", " puas -", 100000));
 
 /* Opciones del usuario */
 
@@ -154,7 +154,7 @@ if (respuesta == "1"){
 
 } else if (respuesta == "2"){
 
-let guitarra = prompt ("Rango de precio que desea pagar");
+let guitarra = prompt ("Guitarra a la que desea actualizar el precio");
 let indice = buscarGuitarra(guitarra);
 
 if (indice >= 0){
