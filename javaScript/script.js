@@ -25,6 +25,7 @@ const cantidadTotal = document.getElementById('cantidadTotal')
 let carrito = []
 
 document.addEventListener('DOMContentLoaded', () => {
+
     if (localStorage.getItem('carrito')){
         carrito = JSON.parse(localStorage.getItem('carrito'))
         actualizarCarrito()
@@ -42,21 +43,15 @@ stockProductos.forEach((producto) => {
     <p class="precioProducto">Precio:$ ${producto.precio}</p>
     <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
     `
+
+
     contenedorProductos.appendChild(div)
-
     const boton = document.getElementById(`agregar${producto.id}`)
-
     boton.addEventListener('click', () => {
-
         agregarAlCarrito(producto.id)
 
     })
 })
-
-
-
-
-
 
 /* ------------------------------------------- MODAL ---------------------------------------------------- */
 

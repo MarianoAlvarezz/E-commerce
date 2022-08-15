@@ -12,7 +12,7 @@ body{
 
 #boton-carrito {
     border: none;
-    color: red;
+    color: rgb(123, 12, 12);
     font-size: 20px;
     background: rgb(0,0,0);
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 0%, rgba(0,0,0,0.6871790952709209) 0%, rgba(56,56,56,1) 100%);
@@ -22,12 +22,12 @@ body{
 }
 
 .boton-agregar {
-    background-color: red;
+    background-color: rgb(123, 12, 12);
     color: white;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 17px;
+    border-radius: 5px;
+    font-weight: 800;
     padding: 5px;
-    border: none;
     margin: 5px;
 }
 
@@ -67,7 +67,7 @@ body{
 }
 
 .modal-carrito h3 {
-    color: red;
+    color:  rgb(123, 12, 12);
     padding-bottom: 5px;
 }
 .modal-carrito #carritoCerrar {
@@ -75,22 +75,11 @@ body{
     top: 15px;
     right: 15px;
     font-size: 20px;
-    color: red;
+    color:  rgb(123, 12, 12);
     border: none;
     background: rgb(0,0,0);
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 0%, rgba(0,0,0,0.8104283949908089) 0%, rgba(56,56,56,1) 100%);
 }
-.modal-carrito #carritoCerrar:hover {
-    cursor: pointer;
-}
-.modal-carrito #carritoCerrar:focus {
-    outline: none;
-}
-.modal-carrito .precioProducto {
-    padding-top: 10px;
-}
-
-
 
 /* ------------------------------------------------------------------ CSS HTML -------------------------------------------------------------------- */
 
@@ -128,7 +117,7 @@ header .nav-link:hover {
 header .nav-link:after {
     content: "";
     display: block;
-    background: white;
+    background: rgb(141, 2, 2);
     height: 3px;
     -webkit-clip-path: var(--clippy);
             clip-path: var(--clippy);
