@@ -53,6 +53,30 @@ stockProductos.forEach((producto) => {
     })
 })
 
+const agregarAlCarrito = (prodId) => {
+
+
+    const existe = carrito.some (prod => prod.id === prodId)
+
+    if (existe){
+        const prod = carrito.map (prod => {
+
+            if (prod.id === prodId){
+                prod.cantidad++
+            }
+        })
+    } else {
+        const item = stockProductos.find((prod) => prod.id === prodId)
+
+        carrito.push(item)
+    }
+
+    actualizarCarrito()
+
+    existe > 0 ? alert ("Usted está agregando nuevamente la misma guitarra") : alert ("Usted agrego una guitarra nueva")
+
+}
+
 /* ------------------------------------------- MODAL ---------------------------------------------------- */
 
 const contenedorModal = document.getElementsByClassName('modal-contenedor')[0]
