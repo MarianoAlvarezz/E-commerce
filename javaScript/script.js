@@ -1,6 +1,6 @@
 /* ------------------------------------------------------- Stock ----------------------------------------------------- */
 
-let stockProductos = [
+/* let stockProductos = [
     {id: 1, nombre: "Guitarra 1", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 1200",},
     {id: 2, nombre: "Guitarra 2", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 1500",},
     {id: 3, nombre: "Guitarra 3", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 1900",},
@@ -10,9 +10,31 @@ let stockProductos = [
     {id: 7, nombre: "Guitarra 7", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 3550",},
     {id: 8, nombre: "Guitarra 8", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 3100",},
     {id: 9, nombre: "Guitarra 9", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 2750",}
-]
+]  */
 
-/* ------------------------------------------------------- Productos ----------------------------------------------------- */
+/* --------------------------------------------------- FETCH ------------------------------------------------ */
+
+const url = './javaScript/db.json';
+
+class GestionarProductos{
+    iniciar(){
+
+fetch (url)
+
+.then (respuesta => respuesta.json())
+
+.then(resultado=>{
+
+    stockProductos = resultado.stockProductos;
+
+this.cargarProductos (stockProductos); 
+            })
+            this.stockProductos();
+            this.actualizarCarrito();
+        }
+    }
+
+/* --------------------------------------------------- Const Productos ------------------------------------------------ */
 
 const contenedorProductos = document.getElementById('contenedor-productos')
 const contenedorCarrito = document.getElementById('carrito-contenedor')
@@ -21,42 +43,8 @@ const contadorCarrito = document.getElementById('contadorCarrito')
 const cantidad = document.getElementById('cantidad')
 const precioTotal = document.getElementById('precioTotal')
 const cantidadTotal = document.getElementById('cantidadTotal')
+let stockProductos = [];
 
-let carrito = []
-
-document.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('carrito')){
-        carrito = JSON.parse(localStorage.getItem('carrito'))
-        actualizarCarrito()
-    }
-})
-
-botonVaciar.addEventListener('click', () => {
-    carrito.length = 0
-    actualizarCarrito()
-})
-
-
-stockProductos.forEach((producto) => {
-    const div = document.createElement('div')
-    div.classList.add('producto')
-    div.innerHTML = `
-    <img src=${producto.img} alt= ""></img>
-    <h3>${producto.nombre}</h3>
-    <p>${producto.desc}</p>
-    <img class= "imagenCarrito" src= "../Imagenes/imagenCarrito.jpg" alt= ""></img>
-    <p class="precioProducto">Precio:$ ${producto.precio}</p>
-    <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
-    `
-
-
-    contenedorProductos.appendChild(div)
-    const boton = document.getElementById(`agregar${producto.id}`)
-    boton.addEventListener('click', () => {
-        agregarAlCarrito(producto.id)
-
-    })
-})
 
 const agregarAlCarrito = (prodId) => {
 
@@ -78,7 +66,7 @@ const agregarAlCarrito = (prodId) => {
 
     actualizarCarrito()
 
-    
+
     existe > 0 ? alert ("Usted agregó nuevamente la misma guitarra") : alert ("Usted agrego una nueva guitarra")
 
 }
@@ -124,6 +112,46 @@ const actualizarCarrito = () => {
 
 
 }
+
+/* ------------------------------------- ACTUALIZAR CARRITO --------------------------------------------- */
+
+let carrito = []
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('carrito')){
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        actualizarCarrito()
+    }
+})
+
+botonVaciar.addEventListener('click', () => {
+    carrito.length = 0
+    actualizarCarrito()
+})
+
+/* ------------------------------------- PRODUCTOS DOM --------------------------------------------- */
+
+stockProductos.forEach((producto) => {
+    const div = document.createElement('div')
+    div.classList.add('producto')
+    div.innerHTML = `
+    <img src=${producto.img} alt= ""></img>
+    <h3>${producto.nombre}</h3>
+    <p>${producto.desc}</p>
+    <img class= "imagenCarrito" src= "../Imagenes/imagenCarrito.jpg" alt= ""></img>
+    <p class="precioProducto">Precio:$ ${producto.precio}</p>
+    <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
+    `
+
+
+    contenedorProductos.appendChild(div)
+    const boton = document.getElementById(`agregar${producto.id}`)
+    boton.addEventListener('click', () => {
+        agregarAlCarrito(producto.id)
+
+    })
+})
+
 
 /* ------------------------------------------- MODAL ---------------------------------------------------- */
 
