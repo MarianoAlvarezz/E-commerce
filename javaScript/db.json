@@ -1,6 +1,6 @@
 
 {   
-    "stockProductos" :
+    "stockProductos":
     [
     
     {"id": 1, "nombre": "Guitarra 1", "tipo": "Guitarra", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": " 1200"},

@@ -1,5 +1,4 @@
 /* ------------------------------------------------------- Stock ----------------------------------------------------- */
-
 /* let stockProductos = [
     {id: 1, nombre: "Guitarra 1", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 1200",},
     {id: 2, nombre: "Guitarra 2", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 1500",},
@@ -14,25 +13,19 @@
 
 /* --------------------------------------------------- FETCH ------------------------------------------------ */
 
+
 const url = './javaScript/db.json';
 
-class GestionarProductos{
-    iniciar(){
+    class GestionarProductos{
 
-fetch (url)
-
-.then (respuesta => respuesta.json())
-
-.then(resultado=>{
-
-    stockProductos = resultado.stockProductos;
-
-this.cargarProductos (stockProductos); 
-            })
-            this.stockProductos();
-            this.actualizarCarrito();
+        iniciar() {
+            fetch( url )
+    
+            .then( res => res.json())
+            .then( data => {console.log(data)})
+    
         }
-    }
+    };
 
 /* --------------------------------------------------- Const Productos ------------------------------------------------ */
 
@@ -45,6 +38,7 @@ const precioTotal = document.getElementById('precioTotal')
 const cantidadTotal = document.getElementById('cantidadTotal')
 let stockProductos = [];
 
+/* --------------------------------------------------- Agregar al Carrito ------------------------------------------------ */
 
 const agregarAlCarrito = (prodId) => {
 
@@ -71,6 +65,8 @@ const agregarAlCarrito = (prodId) => {
 
 }
 
+/* --------------------------------------------------- Eliminar del Carrito ------------------------------------------------ */
+
 const eliminarDelCarrito = (prodId) => {
     const item = carrito.find((prod) => prod.id === prodId)
 
@@ -83,9 +79,9 @@ const eliminarDelCarrito = (prodId) => {
     console.log(carrito)
 }
 
+
 const actualizarCarrito = () => {
     contenedorCarrito.innerHTML = ""
-
 
 
     carrito.forEach((prod) => {
@@ -150,28 +146,4 @@ stockProductos.forEach((producto) => {
         agregarAlCarrito(producto.id)
 
     })
-})
-
-
-/* ------------------------------------------- MODAL ---------------------------------------------------- */
-
-const contenedorModal = document.getElementsByClassName('modal-contenedor')[0]
-const botonAbrir = document.getElementById('boton-carrito')
-const botonCerrar = document.getElementById('carritoCerrar')
-const modalCarrito = document.getElementsByClassName('modal-carrito')[0]
-
-
-botonAbrir.addEventListener('click', ()=>{
-    contenedorModal.classList.toggle('modal-active')
-})
-botonCerrar.addEventListener('click', ()=>{
-    contenedorModal.classList.toggle('modal-active')
-})
-
-contenedorModal.addEventListener('click', (event) =>{
-    contenedorModal.classList.toggle('modal-active')
-
-})
-modalCarrito.addEventListener('click', (event) => {
-    event.stopPropagation() 
-})
+});
