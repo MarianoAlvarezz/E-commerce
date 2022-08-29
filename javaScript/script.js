@@ -14,16 +14,19 @@
 /* --------------------------------------------------- FETCH ------------------------------------------------ */
 
 
-const url = './javaScript/db.json';
+const url = '/javaScript/db.json';
 
     class GestionarProductos{
 
         iniciar() {
             fetch( url )
-    
+            
             .then( res => res.json())
-            .then( data => {console.log(data)})
-    
+            .then( data => {
+                prod = data.prod;
+
+                this.stockProductos;
+            })
         }
     };
 
