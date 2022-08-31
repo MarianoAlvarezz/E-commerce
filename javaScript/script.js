@@ -1,5 +1,5 @@
 /* ------------------------------------------------------- Stock ----------------------------------------------------- */
-/* let stockProductos = [
+/*  let stockProductos = [
     {id: 1, nombre: "Guitarra 1", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 1200",},
     {id: 2, nombre: "Guitarra 2", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 1500",},
     {id: 3, nombre: "Guitarra 3", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 1900",},
@@ -9,37 +9,23 @@
     {id: 7, nombre: "Guitarra 7", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 3550",},
     {id: 8, nombre: "Guitarra 8", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 3100",},
     {id: 9, nombre: "Guitarra 9", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 2750",}
-]  */
+]   */
 
 /* --------------------------------------------------- FETCH ------------------------------------------------ */
 
 
-const url = '/javaScript/db.json';
+const url = './javaScript/db.json';
 
     class GestionarProductos{
 
         iniciar() {
+            console.log("assadas");
             fetch( url )
             
             .then( res => res.json())
-            .then( data => {
-                prod = data.prod;
+            .then( data => {console.log(data)});
 
-                this.stockProductos;
-            })
-        }
-    };
-
-/* --------------------------------------------------- Const Productos ------------------------------------------------ */
-
-const contenedorProductos = document.getElementById('contenedor-productos')
-const contenedorCarrito = document.getElementById('carrito-contenedor')
-const botonVaciar = document.getElementById('vaciar-carrito')
-const contadorCarrito = document.getElementById('contadorCarrito')
-const cantidad = document.getElementById('cantidad')
-const precioTotal = document.getElementById('precioTotal')
-const cantidadTotal = document.getElementById('cantidadTotal')
-let stockProductos = [];
+    const gestionar = new GestionarProductos(); 
 
 /* --------------------------------------------------- Agregar al Carrito ------------------------------------------------ */
 
@@ -106,7 +92,7 @@ const actualizarCarrito = () => {
 
     contadorCarrito.innerText = carrito.length 
 
-    console.log(carrito)
+/*     console.log(carrito) */
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
 
 
@@ -149,4 +135,5 @@ stockProductos.forEach((producto) => {
         agregarAlCarrito(producto.id)
 
     })
-});
+})}
+};
