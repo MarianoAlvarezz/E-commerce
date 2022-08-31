@@ -15,5 +15,5 @@ const precioTotal = document.getElementById('precioTotal')
 
 const cantidadTotal = document.getElementById('cantidadTotal')
 
-let stockProductos = [];
+const stockProductos = [];
 

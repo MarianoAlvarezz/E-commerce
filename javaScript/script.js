@@ -1,6 +1,6 @@
 /* ------------------------------------------------------- Stock ----------------------------------------------------- */
 
-/* let stockProductos = [
+/* const stockProductos = [
     {id: 1, nombre: "Guitarra 1", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 1200",},
     {id: 2, nombre: "Guitarra 2", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 1500",},
     {id: 3, nombre: "Guitarra 3", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 1900",},
@@ -10,8 +10,8 @@
     {id: 7, nombre: "Guitarra 7", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 3550",},
     {id: 8, nombre: "Guitarra 8", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 3100",},
     {id: 9, nombre: "Guitarra 9", tipo: "Guitarra", cantidad: 1, desc: "Nada es mas hermoso que una guitarra, excepto 2", precio: " 2750",}
-]  
- */
+]   
+
 
 /* --------------------------------------------------- FETCH ------------------------------------------------ */
 
@@ -26,52 +26,12 @@ class GestionarProductos{
         fetch( link )
         .then( res => res.json())
         .then( data => {console.log(data)})
+        .catch (err => console.error(err));
     }
 }
 
 const gestionar = new GestionarProductos()
 gestionar.iniciar()
-
-/* --------------------------------------------------- Agregar al Carrito ------------------------------------------------ */
-
-const agregarAlCarrito = (prodId) => {
-
-    const Toast = Swal.mixin({
-        toast: true,
-        position: 'bottom-right',
-        showConfirmButton: false,
-        timer: 3000,
-        background: 'radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 0%, rgba(0,0,0,0.8104283949908089) 0%, rgba(56,56,56,1) 100%)',
-        timerProgressBar: true,
-        didOpen: (toast) => {
-        toast.addEventListener('mouseenter', Swal.stopTimer)
-        toast.addEventListener('mouseleave', Swal.resumeTimer)
-        }
-    })
-    
-    Toast.fire({
-        icon: 'success',
-        title: 'Usted agrego este producto al carrito'
-    })
-
-
-    const existe = carrito.some (prod => prod.id === prodId)
-
-    if (existe){
-        const prod = carrito.map (prod => {
-
-            if (prod.id === prodId){
-                prod.cantidad++
-            }
-        })
-    } else {
-        const item = stockProductos.find((prod) => prod.id === prodId)
-
-        carrito.push(item)
-    }
-
-    actualizarCarrito()
-}
 
 /* --------------------------------------------------- Eliminar del Carrito ------------------------------------------------ */
 
