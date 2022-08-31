@@ -1,17 +1,77 @@
 
 {   
-    "stockProductos":
-    [
-    
-    {"id": 1, "nombre": "Guitarra 1", "tipo": "Guitarra", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": " 1200"},
-    {"id": 2, "nombre": "Guitarra 2", "tipo": "Guitarra", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": " 1500"},
-    {"id": 3, "nombre": "Guitarra 3", "tipo": "Guitarra", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": " 1900"},
-    {"id": 4, "nombre": "Guitarra 4", "tipo": "Guitarra", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": " 1800"},
-    {"id": 5, "nombre": "Guitarra 5", "tipo": "Guitarra", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": " 2500"},
-    {"id": 6, "nombre": "Guitarra 6", "tipo": "Guitarra", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": " 2300"},
-    {"id": 7, "nombre": "Guitarra 7", "tipo": "Guitarra", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": " 3550"},
-    {"id": 8, "nombre": "Guitarra 8", "tipo": "Guitarra", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": " 3100"},
-    {"id": 9, "nombre": "Guitarra 9", "tipo": "Guitarra", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": " 2750"}
+    "stockProductos": [
 
-]
+    {"id": 1,
+    "nombre": "Guitarra 1",
+    "tipo": "Guitarra",
+    "cantidad": 1,
+    "desc": "Nada es mas hermoso que una guitarra, excepto 2", 
+    "precio": " 1200"
+},
+
+    {"id": 2,
+    "nombre": "Guitarra 2",
+    "tipo": "Guitarra",
+    "cantidad": 1,
+    "desc": "Nada es mas hermoso que una guitarra, excepto 2", 
+    "precio": " 1500"
+},
+
+    {"id": 3,
+    "nombre": "Guitarra 3",
+    "tipo": "Guitarra",
+    "cantidad": 1,
+    "desc": "Nada es mas hermoso que una guitarra, excepto 2", 
+    "precio": " 1900"
+},
+
+    {"id": 4,
+    "nombre": "Guitarra 4",
+    "tipo": "Guitarra",
+    "cantidad": 1,
+    "desc": "Nada es mas hermoso que una guitarra, excepto 2", 
+    "precio": " 1800"
+},
+
+    {"id": 5,
+    "nombre": "Guitarra 5",
+    "tipo": "Guitarra",
+    "cantidad": 1,
+    "desc": "Nada es mas hermoso que una guitarra, excepto 2", 
+    "precio": " 2500"
+},
+
+    {"id": 6,
+    "nombre": "Guitarra 6",
+    "tipo": "Guitarra",
+    "cantidad": 1,
+    "desc": "Nada es mas hermoso que una guitarra, excepto 2", 
+    "precio": " 2300"
+},
+
+    {"id": 7,
+    "nombre": "Guitarra 7",
+    "tipo": "Guitarra",
+    "cantidad": 1,
+    "desc": "Nada es mas hermoso que una guitarra, excepto 2", 
+    "precio": " 3550"
+},
+
+    {"id": 8,
+    "nombre": "Guitarra 8",
+    "tipo": "Guitarra",
+    "cantidad": 1,
+    "desc": "Nada es mas hermoso que una guitarra, excepto 2", 
+    "precio": " 3100"
+},
+
+    {"id": 9,
+    "nombre": "Guitarra 9",
+    "tipo": "Guitarra",
+    "cantidad": 1,
+    "desc": "Nada es mas hermoso que una guitarra, excepto 2", 
+    "precio": " 2750"
+}
+    ]
 }
