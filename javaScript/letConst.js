@@ -1,3 +1,5 @@
+
+
 /* -------------------------------- let y constantes -------------------------------- */
 
 
@@ -15,5 +17,4 @@ const precioTotal = document.getElementById('precioTotal')
 
 const cantidadTotal = document.getElementById('cantidadTotal')
 
-const stockProductos = [];
-
+/*     const stockProductos = [];   */
