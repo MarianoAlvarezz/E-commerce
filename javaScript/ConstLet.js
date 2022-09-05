@@ -1,7 +1,5 @@
 
-
-/* -------------------------------- let y constantes -------------------------------- */
-
+/* --------------------------------------------------- Const Productos ------------------------------------------------ */
 
 const contenedorProductos = document.getElementById('contenedor-productos')
 
@@ -16,5 +14,3 @@ const cantidad = document.getElementById('cantidad')
 const precioTotal = document.getElementById('precioTotal')
 
 const cantidadTotal = document.getElementById('cantidadTotal')
-
-/*     const stockProductos = [];   */
