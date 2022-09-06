@@ -19,7 +19,6 @@ class GestionarProductos {
                     div.innerHTML = `
                     <h3>${producto.nombre}</h3>
                     <p class="precioProducto">Precio:$ ${producto.precio}</p>
-                    <img src="./Imagenes/${producto.img}" alt= "Imagenes guitarras">
                     <img src="../Imagenes/${producto.img}" alt= "Imagenes guitarras">
                     <p class="descProd">${producto.desc}</p>
                     <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
