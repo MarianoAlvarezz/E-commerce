@@ -19,9 +19,8 @@ class GestionarProductos {
                     div.innerHTML = `
                     <h3>${producto.nombre}</h3>
                     <p class="precioProducto">Precio:$ ${producto.precio}</p>
-                    <img src=../imagenes/${producto.img} alt= "">
-                    <p>${producto.desc}</p>
-                    <br>
+                    <img src=../imagenes/${producto.img} alt= "Imagenes guitarras">
+                    <p class="descProd">${producto.desc}</p>
                     <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
                     <hr>
                     <br>
@@ -150,3 +149,24 @@ botonVaciar.addEventListener('click', () => {
     actualizarCarrito()
     
 })
+
+/* ------------------------------------- FINALIZAR COMPRA --------------------------------------------- */
+
+finalizarCompra = () => {
+    let botonFinalizar = document.getElementById("botonFinalizar");
+    let detalleCarrito = document.getElementsByClassName('modal-contenedor');
+    let countCarrito = document.getElementsByClassName('modal-carrito');
+
+    botonFinalizar.addEventListener("click", () => {
+    localStorage.clear();
+    detalleCarrito.innerHTML = "";
+    countCarrito.innerHTML = 0;
+
+    swal.fire({
+        icon: "success",
+        confirmButtonColor: "#719f41",
+        title: "Gracias por comprar en nuestra tienda!!",
+        text: "Nos pondremos en contacto",
+    });
+    });
+}

@@ -71,8 +71,7 @@ body{
 }
 
 .d-block.w-100{
-    height: 555px;
-    border: none;
+    height: auto;
 }
 
 .imagenCarritoModal{
@@ -257,6 +256,10 @@ header .navbar-toggler {
     margin: auto;
     padding: 25px;
     font-family: "Oswald", sans-serif;
+}
+
+.descProd{
+    padding-top: 30px;
 }
 
   /*--------------------------------------------- Fondo ------------------------------------------------- */
