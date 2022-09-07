@@ -17,12 +17,12 @@ class GestionarProductos {
                     const div = document.createElement("div");
                     div.classList.add("producto");
                     div.innerHTML = `
-                    <h3>${producto.nombre}</h3>
-                    <p class="precioProducto">Precio:$ ${producto.precio}</p>
-                    <img src="../Imagenes/${producto.img}" alt= "Imagenes guitarras">
+                    <h3 class="titleImg">${producto.nombre}</h3>
+                    <p class="precioProducto">Precio: U$S ${producto.precio}</p>
+                    <img class="imgGuitar" src="../Imagenes/${producto.img}" alt= "Imagenes guitarras">
                     <p class="descProd">${producto.desc}</p>
                     <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
-                    <hr>
+                    <hr class= "hr">
                     <br>
                     `;
                     
@@ -153,9 +153,9 @@ botonVaciar.addEventListener('click', () => {
 /* ------------------------------------- FINALIZAR COMPRA --------------------------------------------- */
 
 finalizarCompra = () => {
-    let botonFinalizar = document.getElementById("botonFinalizar");
-    let detalleCarrito = document.getElementsByClassName('modal-contenedor');
-    let countCarrito = document.getElementsByClassName('modal-carrito');
+    let botonFinalizar = document.getElementById("#botonFinalizar");
+    let detalleCarrito = document.getElementById('#carrito-contenedor');
+    let countCarrito = document.getElementById('#contadorCarrito');
 
     botonFinalizar.addEventListener("click", () => {
     localStorage.clear();

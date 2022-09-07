@@ -2,22 +2,22 @@
 
 [
     
-    {"id": 1, "nombre": "Stratocaster", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": 1200, "img": "fenderStratocaster.jpg"},
+    {"id": 1, "nombre": "Stratocaster", "cantidad": 1, "desc": "Guitarra a seleccionar para comprar: Stratocaster", "precio": 1350, "img": "fenderStratocaster.jpg"},
     
-    {"id": 2, "nombre": "Les Paul", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": 1500, "img": "gibsonLesPaul.jpg"},
+    {"id": 2, "nombre": "Les Paul", "cantidad": 1, "desc": "Guitarra a seleccionar para comprar: Les Paul", "precio": 1500, "img": "gibsonLesPaul.jpg"},
     
-    {"id": 3, "nombre": "SG", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": 1900, "img": "gibsonSg.jpg"},
+    {"id": 3, "nombre": "SG", "cantidad": 1, "desc": "Guitarra a seleccionar para comprar: SG", "precio": 1900, "img": "gibsonSg.jpg"},
     
-    {"id": 4, "nombre": "Telecaster", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": 1800, "img": "fenderTelecaster.jpg"},
+    {"id": 4, "nombre": "Telecaster", "cantidad": 1, "desc": "Guitarra a seleccionar para comprar: Telecaster", "precio": 1800, "img": "fenderTelecaster.jpg"},
     
-    {"id": 5, "nombre": "Guitarras semi-acústicas", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": 2500, "img": "gretschSemiakustik.jpg"},
+    {"id": 5, "nombre": "Guitarras semi-acústicas", "cantidad": 1, "desc": "Guitarra a seleccionar para comprar: Semi-acústicas", "precio": 1100, "img": "gretschSemiakustik.jpg"},
     
-    {"id": 6, "nombre": "Superstrats", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": 2300, "img": "ibanezSuperstrat.jpg"},
+    {"id": 6, "nombre": "Superstrats", "cantidad": 1, "desc": "Guitarra a seleccionar para comprar: Superstrats", "precio": 2300, "img": "ibanezSuperstrat.jpg"},
     
-    {"id": 7, "nombre": "Flying V", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": 3550, "img": "gibsonFlyingV.jpg"},
+    {"id": 7, "nombre": "Flying V", "cantidad": 1, "desc": "Guitarra a seleccionar para comprar: Flying V", "precio": 2550, "img": "gibsonFlyingV.jpg"},
     
-    {"id": 8, "nombre": "Guitarra Parker", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": 3100, "img": "parkerFly.jpg"},
+    {"id": 8, "nombre": "Guitarra Parker", "cantidad": 1, "desc": "Guitarra a seleccionar para comprar: Guitarra Parker", "precio": 2100, "img": "parkerFly.jpg"},
     
-    {"id": 9, "nombre": "Guitarra Harley Benton", "cantidad": 1, "desc": "Nada es mas hermoso que una guitarra, excepto 2", "precio": 2750, "img": "harleyBenton.jpg"}
+    {"id": 9, "nombre": "Guitarra Harley Benton", "cantidad": 1, "desc": "Guitarra a seleccionar para comprar: Harley Benton", "precio": 1750, "img": "harleyBenton.jpg"}
     
 ]

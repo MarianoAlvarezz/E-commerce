@@ -63,6 +63,15 @@ body{
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 0%, rgba(0,0,0,0.8104283949908089) 0%, rgba(56,56,56,1) 100%);
 }
 
+.modal-carrito{
+    margin: 2rem auto;
+    height: 600px;
+    width:90%;
+    max-width: 400px;
+    overflow:auto;
+    box-sizing: border-box;
+}
+
 
 /*--------------------------------------------- Imagenes ----------------------------------------------- */
 
@@ -83,6 +92,9 @@ body{
     width: 90px;
     height: 60px;
     border-radius: 20%;
+    box-shadow: -1px 2px 14px 11px rgba(0,0,0,0.59);
+    -webkit-box-shadow: -1px 2px 14px 11px rgba(0,0,0,0.59);
+    -moz-box-shadow: -1px 2px 14px 11px rgba(0,0,0,0.59);
 }
 
 .fa-brands.fa-linkedin.fa-2xl{
@@ -97,12 +109,13 @@ body{
     color: rgb(51, 7, 7);
 }
 
-img {
+.imgGuitar {
     width: 150px;
     height: 300px;
     box-shadow: -1px 2px 14px 11px rgba(0,0,0,0.59);
     -webkit-box-shadow: -1px 2px 14px 11px rgba(0,0,0,0.59);
     -moz-box-shadow: -1px 2px 14px 11px rgba(0,0,0,0.59);
+    margin: 20px;
 }
 
 
@@ -137,7 +150,7 @@ img {
     color: rgb(123, 12, 12);
     font-size: 20px;
     background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 0%, rgba(0,0,0,0.6871790952709209) 0%, rgba(56,56,56,1) 100%);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 0%, rgba(0,0,0,0.8104283949908089) 0%, rgba(56,56,56,1) 100%);
     border-radius: 50%;
     padding: 10px 20px;
     transition: all .3s;
@@ -163,7 +176,7 @@ img {
 
 .boton-eliminar {
     color: red;
-    border: none;
+    border-radius: 20px;
     font-size: 20px;
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 0%, rgba(0,0,0,0.8104283949908089) 0%, rgba(56,56,56,1) 100%);
 }
@@ -174,6 +187,10 @@ img {
 
 .boton-eliminar:focus {
     outline: none;
+}
+
+.boton-agregar{
+    margin: 20px;
 }
 
 /* ------------------------------------------------------------------ CSS HTML -------------------------------------------------------------------- */
@@ -243,6 +260,10 @@ header .navbar-toggler {
     font-family: "Oswald", sans-serif;
 }
 
+.hr {
+    width: 300px;
+}
+
 .texto1 {
     width: 100%;
     text-align: center;
@@ -259,7 +280,16 @@ header .navbar-toggler {
 }
 
 .descProd{
-    padding-top: 30px;
+    padding-top: 10px;
+    margin: 20px;
+}
+
+.precioProducto{
+    margin: 20px;
+}
+
+.titleImg{
+    margin: 20px;
 }
 
   /*--------------------------------------------- Fondo ------------------------------------------------- */
