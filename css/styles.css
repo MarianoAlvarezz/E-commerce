@@ -316,3 +316,13 @@ header .navbar-toggler {
     background: rgba(55, 54, 54, 0.8);
     z-index: 10;
 }
+
+/* ----------------------------------------------------- MEDIA QUERIES --------------------------------------------------------------- */
+
+@media (max-width: 550px){
+    .modal-carrito{
+        width: auto;
+        height: 350px;
+        padding: 80px;
+    }
+}
