@@ -14,3 +14,11 @@ const cantidad = document.getElementById('cantidad')
 const precioTotal = document.getElementById('precioTotal')
 
 const cantidadTotal = document.getElementById('cantidadTotal')
+
+/* --------------------------------------------------- Const Boton Finalizar ------------------------------------------------ */
+
+const botonFinalizar = document.getElementById("#botonFinalizar");
+
+const detalleCarrito = document.getElementById('#carrito-contenedor');
+
+const countCarrito = document.getElementById('#contadorCarrito');

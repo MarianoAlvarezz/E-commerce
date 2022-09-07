@@ -115,7 +115,7 @@ const actualizarCarrito = () => {
         div.className = ('productoEnCarrito')
         div.innerHTML = `
         <p>${prod.nombre}</p>
-        <p>Precio:$${prod.precio}</p>
+        <p>Precio: U$S ${prod.precio}</p>
         <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
         <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
         `
@@ -153,9 +153,6 @@ botonVaciar.addEventListener('click', () => {
 /* ------------------------------------- FINALIZAR COMPRA --------------------------------------------- */
 
 finalizarCompra = () => {
-    let botonFinalizar = document.getElementById("#botonFinalizar");
-    let detalleCarrito = document.getElementById('#carrito-contenedor');
-    let countCarrito = document.getElementById('#contadorCarrito');
 
     botonFinalizar.addEventListener("click", () => {
     localStorage.clear();
