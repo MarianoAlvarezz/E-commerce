@@ -11,7 +11,7 @@ const stockProductos = [
     
     {"id": 4, "nombre": "Telecaster", "cantidad": 1, "precio": 1800},
     
-    {"id": 5, "nombre": "Guitarras semi-acústicas", "cantidad": 1, "precio": 1100},
+    {"id": 5, "nombre": "Semi-acústicas", "cantidad": 1, "precio": 1100},
     
     {"id": 6, "nombre": "Superstrats", "cantidad": 1, "precio": 2300},
     
@@ -19,6 +19,6 @@ const stockProductos = [
     
     {"id": 8, "nombre": "Guitarra Parker", "cantidad": 1, "precio": 2100},
     
-    {"id": 9, "nombre": "Guitarra Harley Benton", "cantidad": 1, "precio": 1750}
+    {"id": 9, "nombre": "Harley Benton", "cantidad": 1, "precio": 1750}
     
 ]

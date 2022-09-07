@@ -166,7 +166,6 @@ finalizarCompra = () => {
         icon: "success",
         confirmButtonColor: "#719f41",
         title: "Gracias por comprar en nuestra tienda!!",
-        text: "Nos pondremos en contacto",
     });
     });
 }

@@ -10,7 +10,7 @@
     
     {"id": 4, "nombre": "Telecaster", "cantidad": 1, "desc": "Guitarra a seleccionar para comprar: Telecaster", "precio": 1800, "img": "fenderTelecaster.jpg"},
     
-    {"id": 5, "nombre": "Guitarras semi-acústicas", "cantidad": 1, "desc": "Guitarra a seleccionar para comprar: Semi-acústicas", "precio": 1100, "img": "gretschSemiakustik.jpg"},
+    {"id": 5, "nombre": "Semi-acústicas", "cantidad": 1, "desc": "Guitarra a seleccionar para comprar: Semi-acústicas", "precio": 1100, "img": "gretschSemiakustik.jpg"},
     
     {"id": 6, "nombre": "Superstrats", "cantidad": 1, "desc": "Guitarra a seleccionar para comprar: Superstrats", "precio": 2300, "img": "ibanezSuperstrat.jpg"},
     
@@ -18,6 +18,6 @@
     
     {"id": 8, "nombre": "Guitarra Parker", "cantidad": 1, "desc": "Guitarra a seleccionar para comprar: Guitarra Parker", "precio": 2100, "img": "parkerFly.jpg"},
     
-    {"id": 9, "nombre": "Guitarra Harley Benton", "cantidad": 1, "desc": "Guitarra a seleccionar para comprar: Harley Benton", "precio": 1750, "img": "harleyBenton.jpg"}
+    {"id": 9, "nombre": "Harley Benton", "cantidad": 1, "desc": "Guitarra a seleccionar para comprar: Harley Benton", "precio": 1750, "img": "harleyBenton.jpg"}
     
 ]

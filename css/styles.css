@@ -34,16 +34,6 @@ body{
     visibility: visible;
 }
 
-.modal-carrito {
-    position: relative;
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 0%, rgba(0,0,0,0.8104283949908089) 0%, rgba(56,56,56,1) 100%);
-    min-width: 500px;
-    padding: 20px;
-    margin-top: -100%;
-    transition: all .5s;
-}
-
 .modal-active .modal-carrito {
     margin-top: 0;
 }
@@ -63,15 +53,19 @@ body{
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 0%, rgba(0,0,0,0.8104283949908089) 0%, rgba(56,56,56,1) 100%);
 }
 
-.modal-carrito{
+.modal-carrito {
+    position: relative;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 0%, rgba(0,0,0,0.8104283949908089) 0%, rgba(56,56,56,1) 100%);
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
     margin: 2rem auto;
-    height: 600px;
-    width:90%;
-    max-width: 400px;
+    height: 500px;
+    width: 70%;
     overflow:auto;
     box-sizing: border-box;
 }
-
 
 /*--------------------------------------------- Imagenes ----------------------------------------------- */
 
@@ -323,6 +317,6 @@ header .navbar-toggler {
     .modal-carrito{
         width: auto;
         height: 350px;
-        padding: 80px;
+        overflow:scroll;
     }
 }
