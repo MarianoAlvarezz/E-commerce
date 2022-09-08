@@ -162,7 +162,7 @@ finalizarCompra = () => {
     swal.fire({
         icon: "success",
         confirmButtonColor: "#719f41",
-        title: "Gracias por comprar en nuestra tienda!!",
+        title: "Gracias por la compra en nuestra tienda!!",
     });
     });
 }
