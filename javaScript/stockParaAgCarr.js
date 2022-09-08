@@ -3,7 +3,7 @@
 
 const stockProductos = [
     
-    {"id": 1, "nombre": "Stratocaster", "cantidad": 1, "precio": 350},
+    {"id": 1, "nombre": "Stratocaster", "cantidad": 1, "precio": 1350},
     
     {"id": 2, "nombre": "Les Paul", "cantidad": 1, "precio": 1500},
     
