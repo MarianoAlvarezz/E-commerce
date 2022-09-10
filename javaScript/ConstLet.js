@@ -17,8 +17,8 @@ const cantidadTotal = document.getElementById('cantidadTotal')
 
 /* --------------------------------------------------- Const Boton Finalizar ------------------------------------------------ */
 
-const botonFinalizar = document.getElementById("#botonFinalizar");
+const botonFinalizar = document.getElementById("botonFinalizar");
 
-const detalleCarrito = document.getElementById('#carrito-contenedor');
+const detalleCarrito = document.getElementById('carrito-contenedor');
 
-const countCarrito = document.getElementById('#contadorCarrito');
+const countCarrito = document.getElementById('contadorCarrito');

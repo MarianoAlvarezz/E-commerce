@@ -25,3 +25,14 @@ modalContenedor.addEventListener('click', (event) =>{
 carritoModal.addEventListener('click', (event) => {
     event.stopPropagation() 
 })
+
+/* ----------------------------------- Evento boton finalizar compra ------------------------------------ */
+
+botonFinalizar.addEventListener("click", () => {
+
+    swal.fire({
+        icon: "success",
+        confirmButtonColor: "#719f41",
+        title: "Gracias por la compra en nuestra tienda!!",
+    });
+    });

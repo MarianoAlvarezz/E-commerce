@@ -158,11 +158,5 @@ finalizarCompra = () => {
     localStorage.clear();
     detalleCarrito.innerHTML = "";
     countCarrito.innerHTML = 0;
-
-    swal.fire({
-        icon: "success",
-        confirmButtonColor: "#719f41",
-        title: "Gracias por la compra en nuestra tienda!!",
-    });
     });
 }
