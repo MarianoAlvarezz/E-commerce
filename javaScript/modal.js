@@ -32,7 +32,8 @@ botonFinalizar.addEventListener("click", () => {
 
     swal.fire({
         icon: "success",
-        confirmButtonColor: "#719f41",
+        confirmButtonColor: "rgb(123, 12, 12)",
+        background: 'radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 0%, rgba(0,0,0,0.8104283949908089) 0%, rgba(56,56,56,1) 100%)',
         title: "Gracias por la compra en nuestra tienda!!",
     });
     });

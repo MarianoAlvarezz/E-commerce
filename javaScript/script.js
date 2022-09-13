@@ -158,5 +158,6 @@ finalizarCompra = () => {
     localStorage.clear();
     detalleCarrito.innerHTML = "";
     countCarrito.innerHTML = 0;
+    
     });
 }
